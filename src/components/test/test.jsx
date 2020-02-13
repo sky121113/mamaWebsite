@@ -1,6 +1,6 @@
 // @flow
 import React from 'react';
-import Timer from './Timer';
+import Timer from './timer';
 import MeetYou from './meetYou';
 import HelloGender from './helloGender';
 import EasyForm from './easyForm';

@@ -88,9 +88,9 @@ class EasyForm extends React.Component<{}, States> {
 
     return (
       <form onSubmit={this.submitForm}>
-        <div>
+        <div className="form-group">
           <label>姓名:</label>
-          <input id="fullName" name="fullName" value={fullName} onChange={this.handleChange} placeholder={inputPrompt} />
+          <input id="fullName" name="fullName" className="form-control" value={fullName} onChange={this.handleChange} placeholder={inputPrompt} />
         </div>
         <div>
           <label>性別:</label>
