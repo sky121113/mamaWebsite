@@ -1,3 +1,4 @@
+// @flow
 import React from 'react';
 
 const Title = (props:{title:string}) => {

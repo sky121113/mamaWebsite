@@ -1,7 +1,8 @@
-import ADD_MESSAGE from '../constants/action-types';
+// @flow
+import { ADD_MESSAGE } from '../constants/action-types';
 import data from '../constants/models';
 
-const messageReducer = (state = data, action) => {
+const messageReducer = (state:any = data, action:any) => {
   switch (action.type) {
     case ADD_MESSAGE: {
       action.payload.id = String(state.message.length + 1);
