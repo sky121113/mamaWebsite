@@ -8,7 +8,7 @@ const HTMLWebpackPluginConfig = new HtmlWebpackPlugin({
   inject: 'body',
 });
 
-const BootstrapPluginConfig = new webpack.ProvidePlugin({
+const ProvidePluginConfig = new webpack.ProvidePlugin({
   $: 'jquery',
   jQuery: 'jquery',
   'window.jQuery': 'jquery',
@@ -22,7 +22,7 @@ module.exports = {
 // 這個webpack打包的對象，這裡面加上剛剛建立的index.js
   entry: ['./src/index.jsx'],
   output: {
-    // publicPath: '/dist/',
+    publicPath: '/',
     path: `${__dirname}/src`,
     filename: 'index_bundle.js',
   },
@@ -38,8 +38,9 @@ module.exports = {
   devServer: {
     // 指定開啟port為9999
     port: 9999,
+    historyApiFallback: true,
   },
-  plugins: [HTMLWebpackPluginConfig, BootstrapPluginConfig],
+  plugins: [HTMLWebpackPluginConfig, ProvidePluginConfig],
   resolve: {
     extensions: ['.js', '.jsx'], // 字尾名自動補全
   },
