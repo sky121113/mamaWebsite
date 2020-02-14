@@ -13,10 +13,4 @@ const MainView = () => (
   </div>
 );
 
-// class Title extends React.Component {
-//   render() {
-//     return <h1>{this.props.title}</h1>;
-//   }
-// }
-// 把該目錄的Title組件匯出
 export default MainView;
