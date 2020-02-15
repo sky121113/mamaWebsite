@@ -46,10 +46,10 @@ class Block extends React.Component<{}, {nextOne:string, quareIn:Array<string>}>
   LineQuare = (index:Array<number>) => {
     const { quareIn } = this.state;
     // eslint-disable-next-line max-len
-    const abc = index.map((n:number) => <Quare content={quareIn[n]} changeIn={() => this.changeNextOne(n)} />);
+    const quares = index.map((n:number) => <Quare content={quareIn[n]} changeIn={() => this.changeNextOne(n)} />);
     return (
       <div style={{ display: 'flex', justifyContent: 'center' }}>
-        {abc}
+        {quares}
       </div>
     );
   };
