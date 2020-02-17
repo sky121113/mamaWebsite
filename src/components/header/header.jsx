@@ -8,17 +8,16 @@ const Header = (props:{title:string}) => {
   return (
     <div>
       <Top />
-      <nav className="navbar navbar-light bg-light">
+      {/* <nav className="navbar navbar-light bg-light">
         <Link className="nav-link" to="/">
           {title}
-        </Link>
+        </Link> 
         <ul className="nav justify-content-center">
-          {/* Link組件中的to會改變網址，但不會刷新頁面 */}
           <li className="nav-item"><Link className="nav-link" to="/myWorks">我的作品</Link></li>
           <li className="nav-item"><Link className="nav-link" to="/test">測試元件</Link></li>
           <li className="nav-item"><Link className="nav-link" to="/about">關於尛馬</Link></li>
-        </ul>
-      </nav>
+        </ul> 
+      </nav> */}
     </div>
   );
 };

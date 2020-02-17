@@ -1,3 +1,4 @@
 import MyWorks from './myWorks';
+import MyWorks2 from './myWorks2';
 
-export default MyWorks;
+export { MyWorks, MyWorks2 };
