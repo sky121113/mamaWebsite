@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 // @flow
 import React from 'react';
 import Navbar from 'react-bootstrap/Navbar';

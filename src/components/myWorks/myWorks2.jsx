@@ -1,6 +1,6 @@
 // @flow
 import React from 'react';
-import { Route, Link, Switch } from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
 import Block from './tic-tac-toe';
 // class About extends React.Component {
 //   render() {

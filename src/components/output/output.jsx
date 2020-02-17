@@ -6,7 +6,7 @@ import Main from '../main';
 
 const Output = () => (
   <BrowserRouter>
-    <Header title="尛馬工作室" />
+    <Header />
     <Main />
   </BrowserRouter>
 );

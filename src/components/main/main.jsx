@@ -1,12 +1,12 @@
 // @flow
 import React from 'react';
 import { Route } from 'react-router-dom';
-import Test from '../test/';
-import Home from '../home/';
-import About from '../about/';
-import { MyWorks, MyWorks2 } from '../myWorks/';
+import Test from '../test';
+import Home from '../home';
+import About from '../about';
+import { MyWorks, MyWorks2 } from '../myWorks';
 
-const MainView = () => (
+const Main = () => (
   <div style={{ textAlign: 'center' }}>
     <Route exact path="/" component={Home} />
     <Route path="/myWorks" component={MyWorks} />
@@ -16,4 +16,4 @@ const MainView = () => (
   </div>
 );
 
-export default MainView;
+export default Main;
